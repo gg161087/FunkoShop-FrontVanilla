@@ -52,33 +52,110 @@ html {
     color: var(--dark-solid);
 }
 a {
-    text-decoration: none;
-    font-size: 2em;
+    text-decoration: none;    
     font-family: inherit;
     color: inherit;
 }
-header, footer {
+/* header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
-}
+} */
 ul, ol {
     list-style: none;
 }
 p {
     font-size: 1.8em;
 }
+img {
+    width: 100%;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
 /* HEADER */
 header {
     background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-family: var(--alternative-font);
+    padding: var(--spacing-36);
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo {
+    max-width: 300px;
+}
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+.with-icon {
+    display: flex;
+    align-items: 0 auto;
+    gap: var(--spacing-8);
+}
+.with-submenu:hover .submenu{
+    display: block;
+}
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+}
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}
+
+/* HERO */
+.hero {
+    background-image: url(../img/funkos-banner.webp);
+    padding: var(--spacing-128);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start;
+}
+.hero__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-solid);
+}
+.hero__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+}
+.hero__link {
+    display: inline-block;
+    background-color: var(--light-bg-solid);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
 }
