@@ -56,10 +56,10 @@ a {
     font-family: inherit;
     color: inherit;
 }
-/* header, footer {
+header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
-} */
+}
 ul, ol {
     list-style: none;
 }
@@ -76,9 +76,7 @@ img {
 
 /* HEADER */
 header {
-    background-color: var(--dark-bg-solid);
-    color: var(--light-font-solid);
-    font-family: var(--alternative-font);
+    background-color: var(--dark-bg-solid);   
     padding: var(--spacing-36);
 }
 .navbar {
@@ -285,6 +283,16 @@ header {
     font-size: var(--font-xsmall);
     color: var(--secundary-solid);
     font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+.footer__copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
 }
 
 @keyframes fade {
