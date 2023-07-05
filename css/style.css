@@ -117,6 +117,7 @@ header {
     width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 3;
 }
 .submenu__link {
     display: block;
